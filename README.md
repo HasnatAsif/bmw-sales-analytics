@@ -41,10 +41,10 @@ The dashboard includes:
 
 Example SQL queries used during the analysis:
 
-### Average Price by Region
+### Revenue by Model
 ![Query](sql_queries/query1.png)
 
-### Revenue by Model
+### Average Price by Region
 ![Query](sql_queries/query2.png)
 
 ### Creating Analytics View
