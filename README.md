@@ -17,7 +17,7 @@ The dataset was cleaned and transformed using SQL before being used to build a P
 
 The repository contains both the **raw dataset** and the **cleaned analytics dataset**.
 
-- `data/bmw_raw.csv` → Original dataset
+- `data/BMW_sales_data_raw.csv` → Original dataset
 - `data/bmw_analytics.csv` → Cleaned dataset used for analysis and dashboard creation
 
 ---
