@@ -22,6 +22,12 @@ The repository contains both the **raw dataset** and the **cleaned analytics dat
 
 ---
 
+## Data Source
+
+The dataset used in this project was sourced from Kaggle and is included for educational and portfolio purposes.
+
+---
+
 ## Dashboard
 
 ![BMW Dashboard](dashboard/bmw_dashboard.png)
