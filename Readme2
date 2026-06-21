@@ -1,1 +1,73 @@
 
+# BMW Sales Analytics
+
+A SQL-based analytics project exploring BMW vehicle sales across global markets, covering revenue performance, model popularity, regional trends, and fuel type breakdown.
+
+---
+
+## Tools Used
+
+- SQL (SQLite)
+- Power BI
+
+---
+
+## Dataset
+
+- **Source:** Kaggle (included for educational and portfolio purposes)
+- **Size:** ~50,000 records
+- **File:** `data/bmw_analytics.csv`
+
+| Column | Description |
+|---|---|
+| `record_id` | Unique row identifier |
+| `Model` | BMW model (e.g. 3 Series, X5, i8) |
+| `Year` | Year of sale |
+| `Region` | Sales region (Asia, Europe, North America, etc.) |
+| `Fuel_Type` | Petrol, Diesel, or Hybrid |
+| `Transmission` | Manual or Automatic |
+| `Engine_Size_L` | Engine displacement in litres |
+| `Mileage_KM` | Vehicle mileage in kilometres |
+| `Price_USD` | Sale price in USD |
+| `Sales_Volume` | Number of units sold |
+| `revenue_USD` | Derived revenue (Price × Volume) |
+
+---
+
+## SQL Queries
+
+All queries are in the `sql_queries/` folder.
+
+| File | Description |
+|---|---|
+| `01_data_cleaning.sql` | Null checks, duplicate detection, outlier identification, and creation of the cleaned analytics table |
+| `02_revenue_by_model.sql` | Total revenue, units sold, avg price, and revenue share % per model; fuel type breakdown per model |
+| `03_avg_price_by_region.sql` | Average price and revenue by region; price range analysis; transmission mix by market |
+| `04_sales_trend_by_year.sql` | Year-over-year revenue and volume trends; YoY growth %; best-selling model per year |
+| `05_analytics_view.sql` | Reusable summary view using window functions — revenue partitioned by model, region, year, and fuel type |
+
+---
+
+## Dashboard
+
+![BMW Dashboard](dashboard/bmw_dashboard.png)
+
+The dashboard includes:
+
+- Total Revenue KPI
+- Total Units Sold KPI
+- Average Price KPI
+- Revenue by Model
+- Revenue by Region
+- Sales Trend by Year
+
+---
+
+## Project Goal
+
+Demonstrate a typical end-to-end data analytics workflow:
+
+1. Data validation and cleaning using SQL
+2. Deriving business metrics (revenue, market share, YoY growth)
+3. Analysing performance across models, regions, fuel types, and years
+4. Building an interactive dashboard for business-style decision support
